@@ -1,0 +1,34 @@
+body{
+    background: skyblue;
+}
+#board{
+    width: 800px;
+    margin: 20px auto;
+    border: 35px solid gray;
+}
+.row{
+    width: 800px;
+    height: 100px;
+}
+.white, .black{
+    width: 100px;
+    height: 100px;
+    float: left;
+    text-align:center;
+    line-height: 100px;
+    font-size: 80px;
+}
+.white{
+    background: white;
+}
+.black{
+    background: black;
+    color: white;
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    font-family: cooper;
+    font-weight: bold;
+    margin-top: 70px;
+}

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+.board{
+    width: 750px;
+    height: 750px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 300px 150px 300px;
+    grid-template-rows: 300px 150px 300px; 
+}
+.home{
+    padding: 45px;
+}
+.home.green{
+    background: green;
+}
+.home.red{
+    background: red;
+}
+.home.yellow{
+    background: yellow;
+}
+.home.blue{
+    background: blue;;
+}
+.inner{
+    width: 210px;
+    height: 210px;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+}
+.coin{
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+}
+.coin.green{
+    background: green;
+}
+.coin.red{
+    background: red;
+}
+.coin.yellow{
+    background: yellow;
+}
+.coin.blue{
+    background: blue;
+}
+.path.vertical{
+    width: 150px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.path.horizontal{
+    width: 300px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.box{
+    border: 1px solid rgb(194, 190, 190);
+    background: white;
+}
+.box.green{
+    background: green;
+}
+.box.red{
+    background: red;
+}
+.box.yellow{
+    background: yellow;
+}
+.box.blue{
+    background: blue;
+}
+.center{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: white;
+    overflow: hidden;
+}
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.triangle.red{
+    top: 0;
+    left: 0;
+    border-top: 75px solid red;
+    border-right: 75px solid transparent;
+    border-left: 75px solid transparent;
+}
+.triangle.blue{
+    top: 0;
+    right: 0;
+    border-right: 75px solid blue;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+}
+.triangle.yellow{
+    bottom: 0;
+    left: 0;
+    border-bottom: 75px solid yellow;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+}
+.triangle.green{
+    left: 0;
+    top: 0;
+    border-left: 75px solid green;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+}
+.home,
+.path,
+.center{
+    overflow: hidden;
+}
